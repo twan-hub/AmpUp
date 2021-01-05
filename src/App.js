@@ -1,24 +1,60 @@
 import logo from './logo.svg';
 import './App.css';
+import React,{Component} from'react'
+
+export class Foo extends Component{
+  render()
+    {
+      return <div>Hello</div>;
+    }
+}
+// hello, World example
+// function formatName(user){
+//   return user.firstname + ' ' + user.lastname;
+// }
+// const user={
+//   firstname: "Antwan",
+//   lastname: "Stith"
+// }
+// const element= <h1>Helllo,{formatName(user)}</h1>;
+
+// Time Example
+// function tick(){
+//   const element=(
+//     <div>
+//       <h1>Hello,{formatName(user)}</h1>
+//       <h2>The time is {new Date().toLocaleTimeString()}.</h2>
+//     </div>
+//   )
+// }
+
+// Using properties
+
+// function Welcome(props){
+//   return <h1>Hello, {props.name}</h1>;
+// }
+// const element= <div>
+// <Welcome name='Twan' />
+// <Welcome name='Stith'/>
+// </div>;
+
+// class Toggle extends React.Component{
+//   constructor
+// }
+
+// function handleClick(e) {
+//   e.preventDefault();
+//   console.log('The link was clicked.');
+// };
+
+const element= <button>
+
+</button>;
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    element
   );
 }
 

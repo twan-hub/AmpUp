@@ -1,0 +1,18 @@
+.flex-container {
+    display:flex;
+    background-color: transparent;
+    justify-content:space-around;
+    flex-direction:column;
+
+}
+
+.flex-container div{
+    flex-grow:5;
+    background-color: grey;
+    margin: 25px 25px 25px 25px;
+    padding: 4%;
+    font-size: 2vw;
+    text-align: center;
+    border-radius: 10px;
+}
+
