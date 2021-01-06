@@ -56,8 +56,8 @@ function App() {
   return (
     <div>
       <form class='flex-upload'>
-        <input class='upload-form' placeholder='First Name'/>
-        <input class='upload-form' placeholder='Last Name'/>
+        <input class='upload-form' placeholder='Song Title'/>
+        <input class='upload-form' placeholder='Genere'/>
         <button style={{float:'right'}}>Upload</button>
       </form>
       
