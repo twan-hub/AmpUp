@@ -1,12 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import React,{Component} from'react'
+import React, { Component } from 'react'
 
-export class Foo extends Component{
-  render()
-    {
-      return <div>Hello</div>;
-    }
+export class Foo extends Component {
+  render() {
+    return <div>Hello</div>;
+  }
 }
 // hello, World example
 // function formatName(user){
@@ -47,7 +46,7 @@ export class Foo extends Component{
 //   console.log('The link was clicked.');
 // };
 
-const element= <button>
+const element = <button>
 
 </button>;
 
@@ -56,13 +55,17 @@ function App() {
   return (
     <div>
       <form class='flex-upload'>
-        <input class='upload-form' placeholder='Song Title'/>
-        <input class='upload-form' placeholder='Genere'/>
-        <button style={{float:'right'}}>Upload</button>
+        <input class='upload-form' placeholder='Song Title' />
+        <input class='upload-form' placeholder='Genere' style={{marginBottom:'25px'}} />
+        <label for='aud' >Select Audio:</label>
+        <input class='upload-form-file' type='file' accept='audio/*' style={{ border: 'solid 2px lightgray',paddingTop:'25px',marginBottom:'25px'}} id='aud' />
+        <label for='img' >Select Cover Art:</label>
+        <input class='upload-form-file' type='file' accept='image/*' style={{ border: 'solid 2px lightgray', paddingTop:'25px'}} id='img' />
+        <button style={{ float: 'right' }}>Upload</button>
       </form>
-      
+
     </div>
-    
+
   );
 }
 
