@@ -54,7 +54,15 @@ const element= <button>
 
 function App() {
   return (
-    element
+    <div>
+      <form class='flex-upload'>
+        <input class='upload-form' placeholder='First Name'/>
+        <input class='upload-form' placeholder='Last Name'/>
+        <button style={{float:'right'}}>Upload</button>
+      </form>
+      
+    </div>
+    
   );
 }
 

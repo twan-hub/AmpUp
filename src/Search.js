@@ -1,12 +1,15 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
 import './Search.css';
-import Nav from './Nav';
-import reportWebVitals from './reportWebVitals';
+import React from 'react'
+import {Foo} from './App.js'
 
-ReactDOM.render(
-    <Nav/>,
-    document.getElementById('nav')
-  );
+function SearchBody(){
+  return (
+    <div class='flex-search'>
+      <input placeholder='Search your favorite genre...' class='searchBar'/>
+      <button class='search-submit'>Find Music</button>
+    </div>
   
-  reportWebVitals();
+);
+}
+
+export default SearchBody;

@@ -9,18 +9,20 @@ import {
 } from "react-router-dom";
 import Genere from './Genere';
 import DiscoveryBody from './Discovery';
+import SearchBody from './Search';
+import App from './App';
 
 
 const nav = [
   "Search",
-  "Listen",
+  "Playlist",
   "Discovery",
   "Genre",
   "Log Out",
-  "Home"
+  "Upload"
 ];
 
-function Home() {
+function Upload() {
   const element=<h1 class='top'>{nav[5]}</h1>
   return element;
 }
@@ -29,7 +31,7 @@ function Search() {
   return <h1 class='top'>{nav[0]}</h1>;
 }
 
-function Listen() {
+function Playlist() {
   return <h1 class='top'>{nav[1]}</h1>;
 }
 
@@ -55,7 +57,7 @@ function Nav() {
 
                 <Link to="/search">{nav[0]}</Link>
 
-                <Link to="/listen">{nav[1]}</Link>
+                <Link to="/playlist">{nav[1]}</Link>
 
                 <Link to="/discovery">{nav[2]}</Link>
 
@@ -68,9 +70,10 @@ function Nav() {
         <Switch>
           <Route path="/search">
             <Search />
+            <SearchBody/>
           </Route>
-          <Route path="/listen">
-            <Listen />
+          <Route path="/playlist">
+            <Playlist/>
           </Route>
           <Route path="/discovery">
             <Discovery />
@@ -78,12 +81,15 @@ function Nav() {
           </Route>
           <Route path="/genre">
             <Genre />
+            <Genere/>
           </Route>
           <Route path="/log-out">
             <LogOut />
           </Route>
           <Route path="/">
-            <Home />
+            <Upload />
+            <App/>
+            
           </Route>
         </Switch>
       </div>
