@@ -6,12 +6,12 @@
 
 .topnav a{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-around;
     flex-wrap:wrap;
     float:left;
     color:red;
     text-align:center;
-    padding: 14px 7%;
+    padding: 15px 5.686%;
     text-decoration: none;
     font-size: 17px;
 }
@@ -29,3 +29,7 @@
 /* .right{
     float:right;
 } */
+
+.top{
+    text-align: center;
+}

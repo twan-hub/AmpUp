@@ -1,0 +1,19 @@
+.flex-discovery {
+    display:flex;
+    background-color: transparent;
+    justify-content:space-between;
+    flex-direction:row;
+}
+
+.flex-discovery div{
+    flex-grow: 1;
+    background:grey;
+    padding: 40px 20px;
+    margin-top: 3%;
+    margin-right:20px;
+    margin-left: 20px;
+    border-radius: 20px;
+    text-align:center;
+}
+
+

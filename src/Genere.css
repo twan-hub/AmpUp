@@ -1,4 +1,4 @@
-.flex-container {
+.flex-genre {
     display:flex;
     background-color: transparent;
     justify-content:space-around;
@@ -6,7 +6,7 @@
 
 }
 
-.flex-container div{
+.flex-genre div{
     flex-grow:5;
     background-color: grey;
     margin: 25px 25px 25px 25px;
@@ -15,4 +15,5 @@
     text-align: center;
     border-radius: 10px;
 }
+
 

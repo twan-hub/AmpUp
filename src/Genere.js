@@ -2,16 +2,17 @@ import './Genere.css';
 import React from 'react'
 import {Foo} from './App.js'
 
-const genere = ['Hip-Hop',
+const genere = [
+'Hip-Hop',
 'Country',
 'Rock',
 'Alternative',
 'Classical',
-'Gospel'];
+'Gospel'
+];
 
 const element=
-<div class='flex-container'>
-    <Foo/>
+<div class='flex-genre'>
     <div>{genere[0]}</div>
     <div>{genere[1]}</div>
     <div>{genere[2]}</div>
