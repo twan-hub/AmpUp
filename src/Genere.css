@@ -8,12 +8,25 @@
 
 .flex-genre div{
     flex-grow:5;
-    background-color: grey;
+    /* opacity:; */
+    background-color: lightgray;
     margin: 25px 25px 25px 25px;
     padding: 4%;
     font-size: 2vw;
     text-align: center;
     border-radius: 10px;
 }
+
+.flex-genre div:hover{
+    flex-grow:5;
+    /* opacity:; */
+    background-color: rgba(211, 211, 211, 0.233);
+    margin: 25px 25px 25px 25px;
+    padding: 4%;
+    font-size: 2vw;
+    text-align: center;
+    border-radius: 10px;
+}
+
 
 
